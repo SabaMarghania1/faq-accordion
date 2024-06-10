@@ -72,8 +72,13 @@ ul {
 .question-head p {
   color: #301534;
   font-weight: 600;
+  transition: 0.5s all ease;
 }
 
+.question-head p:hover {
+  color: #ad28eb;
+  font-weight: 600;
+}
 .answer {
   font-size: 14px;
   line-height: 150%;
@@ -84,4 +89,43 @@ ul {
 .button {
   border: none;
   background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background: url('/background-pattern-desktop.svg');
+    height: 320px;
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    margin-top: -150px;
+  }
+  .containers_header {
+    margin-bottom: 27.5px;
+  }
+
+  .containers_header img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containers_header h1 {
+    font-size: 56px;
+  }
+
+  .question-head {
+    gap: 0;
+  }
+  .question-head p {
+    font-size: 18px;
+  }
+
+  .answer {
+    margin-top: 28px;
+    font-size: 16px;
+  }
 }

@@ -21,7 +21,7 @@ const data = [
   },
   {
     id: 4,
-    question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
+    question: "How can I get help if I'm stuck on a challenge?",
     answer:
       "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
   },
@@ -41,7 +41,11 @@ const List = () => {
           <div className="question-head">
             <p>{item.question}</p>
             <button className="button" onClick={() => handleClick(item.id)}>
-              <img src="/icon-plus.svg" alt="arrow-down" />
+              {activeId === item.id ? (
+                <img src="/icon-minus.svg" alt="arrow-down" />
+              ) : (
+                <img src="/icon-plus.svg" alt="arrow-down" />
+              )}
             </button>
           </div>
           {activeId === item.id && <p className="answer">{item.answer}</p>}
