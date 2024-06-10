@@ -6,4 +6,4 @@ This is a simple FAQ accordion component built for the [Frontend Mentor](https:/
 
 ## Demo
 
-You can view a live demo of the FAQ accordion component [here](#).
+You can view a live demo of the FAQ accordion component [here](https://faq-accordion-nu-six.vercel.app/).
