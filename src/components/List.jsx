@@ -28,7 +28,7 @@ const data = [
 ];
 
 const List = () => {
-  const [activeId, setActiveId] = useState(null);
+  const [activeId, setActiveId] = useState(1);
 
   const handleClick = id => {
     setActiveId(activeId === id ? null : id);
